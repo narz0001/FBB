@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,6 +17,10 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone"/>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> defd9d9501ec9b2a9565f6f5e6e2a1e756eb0186
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
@@ -27,11 +32,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+<<<<<<< HEAD
+=======
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="120dp"
+                android:layout_height="80dp"
                 android:src="@drawable/fbb_logo"
-                />
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+>>>>>>> defd9d9501ec9b2a9565f6f5e6e2a1e756eb0186
 
             <TextView
                 android:layout_width="match_parent"
@@ -40,8 +50,9 @@
                 android:text="my store app"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
-                android:textSize="25sp"
-                android:gravity="center"/>
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_marginBottom="36dp"/>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="300dp"
@@ -49,34 +60,39 @@
                 android:layout_gravity="center">
 
             <AutoCompleteTextView
-                android:id="@+id/email"
+                android:id="@+id/user_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/prompt_userid"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textStyle="italic"
-                android:singleLine="true"/>
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:paddingBottom="18dp" />
 
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                >
 
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="17dp"
                 android:hint="@string/prompt_password"
                 android:textStyle="italic"
+                android:textSize="16sp"
                 android:imeActionId="@+id/login"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:singleLine="true"/>
+                android:singleLine="true"
+                android:background="@android:color/transparent"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -84,10 +100,12 @@
                 android:layout_gravity="center"
                 android:id="@+id/log_in_button"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Login"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/action_log_in"
                 android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="22sp"
                 android:textColor="@color/colorAccent"
                 android:background="@drawable/background_login"/>
 
@@ -95,11 +113,11 @@
                 android:layout_gravity="center"
                 android:id="@+id/sign_up_button"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="New User? Sign Up"
-                android:textStyle="bold"
-                android:textSize="20sp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/action_sign_up"
+                android:textSize="22sp"
+                android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"
                 android:background="@drawable/background_signup"/>
 
