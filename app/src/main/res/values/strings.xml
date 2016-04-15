@@ -14,4 +14,8 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="instore_locater">Instore Locater</string>
+    <string name="barcode_scanner">Barcode Scanner</string>
+    <string name="my_Transaction">My Transaction</string>
+    <string name="my_wallet">My Wallet</string>
 </resources>

@@ -16,16 +16,6 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login Page"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/colorAccent"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:gravity="center"/>
-
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
