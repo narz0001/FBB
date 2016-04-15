@@ -17,10 +17,7 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone"/>
 
-<<<<<<< HEAD
-=======
 
->>>>>>> defd9d9501ec9b2a9565f6f5e6e2a1e756eb0186
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
@@ -32,8 +29,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-<<<<<<< HEAD
-=======
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -41,7 +36,6 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"/>
->>>>>>> defd9d9501ec9b2a9565f6f5e6e2a1e756eb0186
 
             <TextView
                 android:layout_width="match_parent"
@@ -59,17 +53,17 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
 
-            <AutoCompleteTextView
-                android:id="@+id/user_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/prompt_userid"
-                android:inputType="text"
-                android:maxLines="1"
-                android:textStyle="italic"
-                android:singleLine="true"
-                android:textSize="18sp"
-                android:paddingBottom="18dp" />
+                <AutoCompleteTextView
+                    android:id="@+id/user_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_userid"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textStyle="italic"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:paddingBottom="18dp" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -79,20 +73,20 @@
                 android:layout_gravity="center"
                 >
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="17dp"
-                android:hint="@string/prompt_password"
-                android:textStyle="italic"
-                android:textSize="16sp"
-                android:imeActionId="@+id/login"
-                android:imeActionLabel="@string/action_sign_in_short"
-                android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:background="@android:color/transparent"/>
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:hint="@string/prompt_password"
+                    android:textStyle="italic"
+                    android:textSize="16sp"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"/>
 
             </android.support.design.widget.TextInputLayout>
 

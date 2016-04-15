@@ -17,6 +17,14 @@
 
     </android.support.v7.widget.Toolbar>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/fbb_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
     <TextView
         android:layout_margin="30dp"
         android:textColor="@color/colorPrimary"
@@ -30,38 +38,36 @@
         android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    <TableRow
-        style="@style/DashBoardTableRow"
-        >
-        <Button
-            android:id="@+id/instore_locater"
-            style="@style/DashboardButtons"
-            android:text="@string/instore_locater"
-             />
-        <Button
-            android:id="@+id/barcode_scanner"
-            style="@style/DashboardButtons"
-            android:layout_height="match_parent"
-            android:text="@string/barcode_scanner"/>
-    </TableRow>
+        <TableRow
+            style="@style/DashBoardTableRow"
+            >
+            <Button
+                android:id="@+id/instore_locater"
+                style="@style/DashboardButtons"
+                android:text="@string/instore_locater"
+                />
+            <Button
+                android:id="@+id/barcode_scanner"
+                style="@style/DashboardButtons"
+                android:layout_height="match_parent"
+                android:text="@string/barcode_scanner"/>
+        </TableRow>
 
-    <TableRow
-        style="@style/DashBoardTableRow">
+        <TableRow
+            style="@style/DashBoardTableRow">
 
-        <Button
-            android:id="@+id/my_transaction"
-            style="@style/DashboardButtons"
-            android:text="@string/my_Transaction"
-            />
+            <Button
+                android:id="@+id/my_transaction"
+                style="@style/DashboardButtons"
+                android:text="@string/my_Transaction"
+                />
 
-        <Button
-            android:id="@+id/my_wallet"
-            style="@style/DashboardButtons"
-            android:text="@string/my_wallet"
-             />
+            <Button
+                android:id="@+id/my_wallet"
+                style="@style/DashboardButtons"
+                android:text="@string/my_wallet"
+                />
 
-    </TableRow>
-
-
-</TableLayout>
+        </TableRow>
+    </TableLayout>
 </LinearLayout>
