@@ -5,6 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
+<<<<<<< HEAD
 
     </style>
 
@@ -23,6 +24,9 @@
         <item name="android:minHeight">100dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+=======
+        <item name="colorControlNormal">#000000</item>
+>>>>>>> defd9d9501ec9b2a9565f6f5e6e2a1e756eb0186
     </style>
 
 </resources>

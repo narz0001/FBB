@@ -11,14 +11,6 @@ android:shape="rectangle">
     android:width="2dp">
 </stroke>
 
-
-    <padding
-        android:left="8dp"
-        android:top="8dp"
-        android:right="8dp"
-        android:bottom="8dp"    >
-    </padding>
-
 <corners
     android:radius="4dp"   >
 </corners>
