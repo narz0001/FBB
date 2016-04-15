@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.myapps.android.fbb.DashBoard"
+    android:gravity="center"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_margin="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MY STORE APP"
+        android:gravity="center_horizontal"
+        android:textSize="24dp"/>
+
+    <TableLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TableRow
+        style="@style/DashBoardTableRow"
+        >
+        <Button
+            android:id="@+id/instore_locater"
+            style="@style/DashboardButtons"
+            android:text="@string/instore_locater"
+             />
+        <Button
+            android:id="@+id/barcode_scanner"
+            style="@style/DashboardButtons"
+            android:layout_height="match_parent"
+            android:text="@string/barcode_scanner"/>
+    </TableRow>
+
+    <TableRow
+        style="@style/DashBoardTableRow">
+
+        <Button
+            android:id="@+id/my_transaction"
+            style="@style/DashboardButtons"
+            android:text="@string/my_Transaction"
+            />
+
+        <Button
+            android:id="@+id/my_wallet"
+            style="@style/DashboardButtons"
+            android:text="@string/my_wallet"
+             />
+
+    </TableRow>
+
+
+</TableLayout>
+</LinearLayout>
