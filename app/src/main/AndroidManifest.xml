@@ -20,11 +20,15 @@
             android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DashBoard" />
+        <activity android:name=".DashBoard" >
+            <intent-filter>
+                <action android:name="com.myapps.android.fbb.DashBoard" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
