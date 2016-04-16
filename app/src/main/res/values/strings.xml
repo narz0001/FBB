@@ -17,8 +17,8 @@
     </string>
     <string name="login_page">Login Page</string>
     <string name="no_implementation">Not Yet Implemented</string>
-    <string name="instore_locater">Instore Locater</string>
-    <string name="barcode_scanner">Barcode Scanner</string>
-    <string name="my_Transaction">My Transaction</string>
-    <string name="my_wallet">My Wallet</string>
+    <string name="instore_locater">Instore\nLocater</string>
+    <string name="barcode_scanner">Scan\nBarcode</string>
+    <string name="my_wallet">My\nWallet</string>
+    <string name="my_transaction">My\nTransaction</string>
 </resources>

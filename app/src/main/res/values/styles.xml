@@ -9,20 +9,14 @@
     </style>
 
     <style name="DashboardButtons">
+        <item name="android:textAllCaps">false</item>
         <item name="android:layout_margin">5dp</item>
         <item name="android:textSize">20sp</item>
-        <item name="android:maxWidth">150dp</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:background">@color/colorPrimary</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_width">match_parent</item>
-    </style>
-
-    <style name="DashBoardTableRow">
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:minHeight">100dp</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">125dp</item>
+        <item name="android:layout_width">125dp</item>
     </style>
 
 </resources>
