@@ -21,10 +21,6 @@ public class DashBoard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
         final Activity activity = this;
-//
-//        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-
 
         instoreLocater = (Button)findViewById(R.id.instore_locater);
         barcodeScanner = (Button)findViewById(R.id.barcode_scanner);
