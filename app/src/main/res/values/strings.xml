@@ -21,4 +21,6 @@
     <string name="barcode_scanner">Scan\nBarcode</string>
     <string name="my_wallet">My\nWallet</string>
     <string name="my_transaction">My\nTransaction</string>
+    <string name="action_options">Menu Options</string>
+    <string name="actions_user_details">User Details</string>
 </resources>
