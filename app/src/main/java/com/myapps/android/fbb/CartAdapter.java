@@ -1,6 +1,7 @@
 package com.myapps.android.fbb;
 
 import android.app.Activity;
+import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +25,7 @@ public class CartAdapter extends ArrayAdapter<CartItem> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.cart_item,parent,false);
         }
 
-        TextView itemName, size, qty, price, numItems;
+        TextView itemName, size, qty, price, numItems,origPrice;
 
         itemName = (TextView)convertView.findViewById(R.id.cartItem);
         itemName.setText(cartItem.itemName);
@@ -37,6 +38,15 @@ public class CartAdapter extends ArrayAdapter<CartItem> {
 
         price = (TextView)convertView.findViewById(R.id.price);
         price.setText("Rs. "+cartItem.itemPrice);
+
+        float discount = (Float.parseFloat(cartItem.itemPrice)/Float.parseFloat(cartItem.origPrice))*100;
+        int discountInt = (int)discount;
+        String origPriceText = "Rs. "+cartItem.origPrice+ "("+discountInt+"% off)";
+
+        origPrice = (TextView)convertView.findViewById(R.id.origPrice);
+        origPrice.setText(origPriceText);
+        origPrice.setPaintFlags(origPrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        origPrice.setTextColor(convertView.getResources().getColor(R.color.red));
 
         return convertView;
     }

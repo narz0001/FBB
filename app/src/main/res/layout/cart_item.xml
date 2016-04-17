@@ -55,6 +55,24 @@
             android:textSize="20dp"
             />
 
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/origPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Rs. 1000"
+            />
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(40%off)"
+            android:textSize="20sp"
+            android:textColor="@color/red"/>
+
     </LinearLayout>
 
     <LinearLayout

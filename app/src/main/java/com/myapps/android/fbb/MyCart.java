@@ -61,7 +61,6 @@ public class MyCart extends AppCompatActivity {
                     cartItem = new CartItem(strings[i]);
                     myCart.add(cartItem);
                 }
-            }else{
             }
         }
     }
