@@ -93,39 +93,6 @@ public class DashBoard extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),R.string.no_implementation, Toast.LENGTH_SHORT).show();
     }
 
-    //    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.menu_dashboard,menu);
-//        //return super.onCreateOptionsMenu(menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//
-//        switch (item.getItemId()){
-//
-//            case R.id.menu:
-//                popup(item.getItemId());
-//                item.setIcon(R.mipmap.ic_arrow_back_white_24dp);
-//                return true;
-//
-//            case R.id.user:
-//                Toast.makeText(this,R.string.no_implementation, Toast.LENGTH_LONG).show();
-//                return true;
-//
-//            case R.id.notifications:
-//                Toast.makeText(this,R.string.no_implementation, Toast.LENGTH_LONG).show();
-//                return true;
-//
-//            case R.id.shopping_cart:
-//                Toast.makeText(this,R.string.no_implementation, Toast.LENGTH_LONG).show();
-//                return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
-//
     public void popup(View view){
 
         ((ImageView)view).setImageResource(R.mipmap.ic_arrow_back_white_24dp);
@@ -181,9 +148,5 @@ public class DashBoard extends AppCompatActivity {
 
         });
     }
-//
-//    public abstract void onDismiss(View temp){
-//        ((ImageView)).setImageResource(R.mipmap.ic_menu_white_24dp);
-//    }
 }
 
