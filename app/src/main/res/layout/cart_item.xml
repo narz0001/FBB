@@ -76,15 +76,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_signup"
         android:gravity="center">
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:background="@color/black"/>
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_clear_black_24dp"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

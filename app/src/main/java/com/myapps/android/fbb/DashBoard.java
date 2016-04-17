@@ -58,8 +58,7 @@ public class DashBoard extends AppCompatActivity {
         myTransaction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DashBoard.this,MyCart.class);
-                startActivity(intent);
+                Toast.makeText(DashBoard.this, R.string.no_implementation, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -95,6 +94,11 @@ public class DashBoard extends AppCompatActivity {
 
     public void displayUserProfile(View view){
         Intent i= new Intent(DashBoard.this,UserProfile.class);
+        startActivity(i);
+    }
+
+    public void displayMyCart(View view){
+        Intent i= new Intent(DashBoard.this,MyCart.class);
         startActivity(i);
     }
 
@@ -134,7 +138,7 @@ public class DashBoard extends AppCompatActivity {
                         break;
 
                     case R.id.menu_logout:
-                        Toast.makeText(getApplicationContext(),R.string.no_implementation, Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(DashBoard.this,LoginActivity.class));
                         break;
 
                     case R.id.menu_my_account:
