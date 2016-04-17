@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.myapps.android.fbb.DashBoard">
+
+    <item
+        android:id="@+id/menu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:icon="@mipmap/ic_menu_white_24dp"
+        android:title="@string/action_options"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_home"
+                android:title="Home"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/menu_my_account"
+                android:title="My Acount"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/menu_rate"
+                android:title="Rate the App"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/menu_help"
+                android:title="Help Centre"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/menu_notif_pref"
+                android:title="Notification Preferences"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/menu_about_app"
+                android:title="About the App"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/menu_logout"
+                android:title="Logout"
+                app:showAsAction="never"/>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/user"
+        android:icon="@mipmap/ic_person_white_24dp"
+        android:title="@string/actions_user_details"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/notifications"
+        android:icon="@mipmap/ic_notifications_white_24dp"
+        android:title="@string/action_notifications"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/shopping_cart"
+        android:icon="@mipmap/ic_shopping_basket_white_24dp"
+        android:title="@string/action_my_cart"
+        app:showAsAction="always"/>
+
+
+</menu>

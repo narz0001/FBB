@@ -10,9 +10,11 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
+
 public class BarcodeScanner extends AppCompatActivity {
 
     Button typeIt;
+
     PopupWindow popUpWindow;
     LayoutInflater layoutInflater;
     LinearLayout rootLinear;
@@ -41,7 +43,5 @@ public class BarcodeScanner extends AppCompatActivity {
 
         popUpWindow = new PopupWindow(container, rootLinear.getMeasuredWidth() - 100, rootLinear.getMeasuredHeight(), true);
         popUpWindow.showAtLocation(rootLinear, Gravity.CENTER, 0, 0);
-
-
     }
 }

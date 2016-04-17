@@ -8,14 +8,10 @@
     android:background="@color/colorAccent"
     tools:context="com.myapps.android.fbb.DashBoard">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        app:titleTextColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/dashboard_toolbar"
+        ></include>
 
     <ImageView
         android:layout_width="wrap_content"
