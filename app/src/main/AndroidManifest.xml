@@ -40,14 +40,14 @@
         </activity>
         <activity android:name=".MyCart">
             <intent-filter>
-                <action android:name="com.myapps.android.fbb.DashBoard" />
+                <action android:name="com.myapps.android.fbb.MyCart" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".ScanningPage">
             <intent-filter>
-                <action android:name="com.myapps.android.fbb.DashBoard" />
+                <action android:name="com.myapps.android.fbb.ScanningPage" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
