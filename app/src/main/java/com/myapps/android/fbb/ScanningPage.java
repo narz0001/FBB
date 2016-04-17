@@ -3,6 +3,7 @@ package com.myapps.android.fbb;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -27,6 +28,9 @@ public class ScanningPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanning_page);
+
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.scan_page_tool_bar);
+        setSupportActionBar(myToolbar);
 
         typeIt = (Button)findViewById(R.id.typeIt);
         rootLinear = (LinearLayout)findViewById(R.id.rootLinear);
@@ -91,5 +95,9 @@ public class ScanningPage extends AppCompatActivity {
         integrator.setBeepEnabled(false);
         integrator.setBarcodeImageEnabled(false);
         integrator.initiateScan();
+    }
+
+    public void closeActivity(View view){
+        finish();
     }
 }

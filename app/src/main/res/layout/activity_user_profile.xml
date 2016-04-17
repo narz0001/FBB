@@ -16,8 +16,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="54dp"
-            android:padding="18dp"
-            android:orientation="horizontal">
+            android:padding="18dp">
 
             <ImageButton
                 android:id="@+id/close_button"
@@ -34,7 +33,6 @@
                 android:layout_centerInParent="true"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:layout_gravity="center"
                 android:textSize="17sp"
                 android:textColor="@color/colorAccent"
                 android:textAllCaps="true"
