@@ -29,7 +29,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@mipmap/ic_person_white_24dp"
             android:layout_weight="1"
-            android:onClick="displayToast"/>
+            android:onClick="displayUserProfile"/>
 
         <ImageButton
             android:id="@+id/notifications"

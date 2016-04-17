@@ -95,6 +95,11 @@ public class DashBoard extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),R.string.no_implementation, Toast.LENGTH_SHORT).show();
     }
 
+    public void displayUserProfile(View view){
+        Intent i= new Intent(DashBoard.this,UserProfile.class);
+        startActivity(i);
+    }
+
     public void popup(View view){
 
         linearLayout.setAlpha(0.5f);
