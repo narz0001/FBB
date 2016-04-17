@@ -21,19 +21,16 @@
     <string name="barcode_scanner">Scan\nBarcode</string>
     <string name="my_wallet">My\nWallet</string>
     <string name="my_transaction">My\nTransaction</string>
-
     <string name="action_options">Menu Options</string>
     <string name="actions_user_details">User Details</string>
     <string name="action_settings">Settings</string>
     <string name="action_notifications">Notifications</string>
     <string name="action_my_cart">My cart</string>
-
     <string name="scanFirstLine">Scan the code or</string>
     <string name="typeIt">Type It</string>
     <string name="scanSecondLine">Align and hold still</string>
     <string name="history">History</string>
-
     <string name="action_log_out">Logout</string>
-
     <string name="address_hint">XXXXXX,XXXXXX Society,XXXX\nCity,State\nPin Code</string>
+
 </resources>

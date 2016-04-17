@@ -13,11 +13,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -53,7 +50,7 @@ public class DashBoard extends AppCompatActivity {
         barcodeScanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DashBoard.this, BarcodeScanner.class);
+                Intent intent = new Intent(DashBoard.this, ScanningPage.class);
                 startActivity(intent);
             }
         });
@@ -61,7 +58,8 @@ public class DashBoard extends AppCompatActivity {
         myTransaction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(DashBoard.this, R.string.no_implementation, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(DashBoard.this,MyCart.class);
+                startActivity(intent);
             }
         });
 
@@ -91,8 +89,8 @@ public class DashBoard extends AppCompatActivity {
         }
     }
 
-    public void displayToast(View view){
-        Toast.makeText(getApplicationContext(),R.string.no_implementation, Toast.LENGTH_SHORT).show();
+    public void displayToast(View view) {
+        Toast.makeText(getApplicationContext(), R.string.no_implementation, Toast.LENGTH_SHORT).show();
     }
 
     public void displayUserProfile(View view){
@@ -142,6 +140,7 @@ public class DashBoard extends AppCompatActivity {
                     case R.id.menu_my_account:
                         Toast.makeText(getApplicationContext(),R.string.no_implementation, Toast.LENGTH_LONG).show();
                         break;
+
 
                     case R.id.menu_notif_pref:
                         Toast.makeText(getApplicationContext(),R.string.no_implementation, Toast.LENGTH_LONG).show();
