@@ -7,52 +7,10 @@
 
     <item
         android:id="@+id/menu"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
         android:icon="@mipmap/ic_menu_white_24dp"
         android:title="@string/action_options"
-        app:showAsAction="always">
-
-        <menu>
-
-            <item
-                android:id="@+id/menu_home"
-                android:title="Home"
-                app:showAsAction="never"/>
-
-            <item
-                android:id="@+id/menu_my_account"
-                android:title="My Acount"
-                app:showAsAction="never"/>
-
-            <item
-                android:id="@+id/menu_rate"
-                android:title="Rate the App"
-                app:showAsAction="never"/>
-
-            <item
-                android:id="@+id/menu_help"
-                android:title="Help Centre"
-                app:showAsAction="never"/>
-
-            <item
-                android:id="@+id/menu_notif_pref"
-                android:title="Notification Preferences"
-                app:showAsAction="never"/>
-
-            <item
-                android:id="@+id/menu_about_app"
-                android:title="About the App"
-                app:showAsAction="never"/>
-
-            <item
-                android:id="@+id/menu_logout"
-                android:title="Logout"
-                app:showAsAction="never"/>
-
-        </menu>
-
-    </item>
+        android:actionViewClass="android.widget.Spinner"
+        app:showAsAction="always"/>
 
     <item
         android:id="@+id/user"
