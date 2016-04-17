@@ -31,11 +31,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".BarcodeScanner" />
-        <activity
-            android:name=".Testasdasdasdasd"
-            android:label="@string/title_activity_testasdasdasdasd"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".MyCart">
+            <intent-filter>
+                <action android:name="com.myapps.android.fbb.DashBoard" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ScanningPage">
+            <intent-filter>
+                <action android:name="com.myapps.android.fbb.DashBoard" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
