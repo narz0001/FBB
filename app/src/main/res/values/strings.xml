@@ -30,5 +30,7 @@
     <string name="typeIt">Type It</string>
     <string name="scanSecondLine">Align and hold still</string>
     <string name="history">History</string>
-    <string name="title_activity_testasdasdasdasd">Testasdasdasdasd</string>
+    <string name="action_log_out">Logout</string>
+    <string name="address_hint">XXXXXX,XXXXXX Society,XXXX\nCity,State\nPin Code</string>
+
 </resources>

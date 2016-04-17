@@ -31,6 +31,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".UserProfile">
+            <intent-filter>
+                <action android:name="com.myapps.android.fbb.UserProfile" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MyCart">
             <intent-filter>
                 <action android:name="com.myapps.android.fbb.DashBoard" />

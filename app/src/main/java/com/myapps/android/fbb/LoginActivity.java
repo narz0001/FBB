@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
-        setTitle(R.string.login_page);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.user_id);
