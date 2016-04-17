@@ -42,7 +42,7 @@ public class DashBoard extends AppCompatActivity {
         barcodeScanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DashBoard.this, BarcodeScanner.class);
+                Intent intent = new Intent(DashBoard.this, Testasdasdasdasd.class);
                 startActivity(intent);
             }
         });

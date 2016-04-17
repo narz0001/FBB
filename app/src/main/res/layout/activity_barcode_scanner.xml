@@ -1,55 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.myapps.android.fbb.BarcodeScanner"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:fitsSystemWindows="true"
+    android:background="@color/colorAccentDark"
+    tools:context="com.myapps.android.fbb.BarcodeScanner">
 
-    <LinearLayout
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
+        android:theme="@style/AppBarOverlay">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/scanFirstLine"
-            android:textSize="20sp"
-            android:textAllCaps="true"/>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/PopupOverlay" />
 
-        <Button
-            android:id="@+id/typeIt"
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_height="25dp"
-            android:text="@string/typeIt"
-            android:textSize="20sp"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/colorAccent"/>
+    </android.support.design.widget.AppBarLayout>
 
-    </LinearLayout>
+    <include layout="@layout/content_barcode_scanner" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="20sp"
-        android:textAllCaps="true"
-        android:layout_marginTop="10dp"
-        android:text="@string/scanSecondLine"
-        />
-
-    <Button
-        android:layout_marginTop="25dp"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp"
-        android:text="@string/history"
-        android:textAllCaps="true"/>
-
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

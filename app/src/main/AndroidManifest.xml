@@ -32,6 +32,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".BarcodeScanner" />
+        <activity
+            android:name=".Testasdasdasdasd"
+            android:label="@string/title_activity_testasdasdasdasd"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>
