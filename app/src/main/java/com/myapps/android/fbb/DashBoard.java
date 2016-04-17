@@ -13,7 +13,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -23,7 +26,8 @@ import com.google.zxing.integration.android.IntentResult;
 public class DashBoard extends AppCompatActivity {
 
     Button instoreLocater, barcodeScanner, myTransaction, myWallet;
-
+    LinearLayout linearLayout;
+    PopupMenu popup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +36,8 @@ public class DashBoard extends AppCompatActivity {
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(myToolbar);
-        //getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        final Activity activity = this;
-
+        linearLayout = (LinearLayout)findViewById(R.id.rootLL);
         instoreLocater = (Button) findViewById(R.id.instore_locater);
         barcodeScanner = (Button) findViewById(R.id.barcode_scanner);
         myTransaction = (Button) findViewById(R.id.my_transaction);
@@ -95,8 +97,10 @@ public class DashBoard extends AppCompatActivity {
 
     public void popup(View view){
 
+        linearLayout.setAlpha(0.5f);
         ((ImageView)view).setImageResource(R.mipmap.ic_arrow_back_white_24dp);
-        final PopupMenu popup = new PopupMenu(getSupportActionBar().getThemedContext(),view);
+
+        popup = new PopupMenu(getSupportActionBar().getThemedContext(),view);
         popup.getMenuInflater().inflate(R.menu.dropdown_menu,popup.getMenu());
         popup.show();
         popup.setOnDismissListener(new PopupMenu.OnDismissListener(){
@@ -105,7 +109,7 @@ public class DashBoard extends AppCompatActivity {
             @Override
             public void onDismiss(PopupMenu menu){
                 ((ImageView)temp).setImageResource(R.mipmap.ic_menu_white_24dp);
-                popup.dismiss();
+                linearLayout.setAlpha(1f);
             }
         });
 
@@ -145,7 +149,6 @@ public class DashBoard extends AppCompatActivity {
                 }
                 return true;
             }
-
         });
     }
 }
