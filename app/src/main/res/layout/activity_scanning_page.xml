@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLinear"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scanFirstLine"
+            android:textSize="20sp"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/typeIt"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="25dp"
+            android:text="@string/typeIt"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/scanSecondLine"
+        />
+
+
+    <Button
+        android:id="@+id/initScan"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/black"
+        android:layout_margin="25dp"
+        android:text="Initiate Scan"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:text="@string/history"
+        android:textAllCaps="true"/>
+
+
+</LinearLayout>
