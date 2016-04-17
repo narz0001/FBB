@@ -1,15 +1,15 @@
 package com.myapps.android.fbb;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.Toast;
@@ -19,21 +19,22 @@ import com.google.zxing.integration.android.IntentResult;
 
 public class ScanningPage extends AppCompatActivity {
 
-    Button typeIt,done, initScan, historyButton;
+    Button typeIt,done, initScan;
     PopupWindow popUpWindow;
     LayoutInflater layoutInflater;
     LinearLayout rootLinear;
-    String resultData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanning_page);
 
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.scan_page_tool_bar);
+        setSupportActionBar(myToolbar);
+
         typeIt = (Button)findViewById(R.id.typeIt);
         rootLinear = (LinearLayout)findViewById(R.id.rootLinear);
         initScan = (Button)findViewById(R.id.initScan);
-        historyButton = (Button)findViewById(R.id.historyButton);
 
         typeIt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,13 +47,6 @@ public class ScanningPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 scanStart();
-            }
-        });
-
-        historyButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(ScanningPage.this, R.string.no_implementation , Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -73,10 +67,6 @@ public class ScanningPage extends AppCompatActivity {
                 popUpWindow.dismiss();
             }
         });
-
-        EditText et = (EditText)findViewById(R.id.enterBarCode);
-
-        resultData = et.getText().toString();
     }
 
 
@@ -105,5 +95,9 @@ public class ScanningPage extends AppCompatActivity {
         integrator.setBeepEnabled(false);
         integrator.setBarcodeImageEnabled(false);
         integrator.initiateScan();
+    }
+
+    public void closeActivity(View view){
+        finish();
     }
 }

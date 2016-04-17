@@ -4,6 +4,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -23,8 +24,7 @@ public class MyCart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_cart);
 
-
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_cart_tool_bar);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_car_tool_bar);
         setSupportActionBar(myToolbar);
 
         myCart = new CartAdapter(
@@ -68,6 +68,10 @@ public class MyCart extends AppCompatActivity {
                 }
             }
         }
+    }
+
+    public void closeActivity(View view){
+        finish();
     }
 
 }

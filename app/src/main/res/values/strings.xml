@@ -33,4 +33,7 @@
     <string name="action_log_out">Logout</string>
     <string name="address_hint">XXXXXX,XXXXXX Society,XXXX\nCity,State\nPin Code</string>
 
+    <string name="my_cart">My Cart</string>
+    <string name="scan">Scan</string>
+
 </resources>

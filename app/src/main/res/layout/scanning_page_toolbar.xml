@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:titleTextColor="@color/colorAccent"
     android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
+    android:layout_height="50dp"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
     android:background="@color/colorPrimary">
 
     <ImageButton
-        android:id="@+id/close_button1"
+        android:id="@+id/close_button2"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:foregroundGravity="center"
@@ -27,6 +27,6 @@
         android:textSize="20sp"
         android:textColor="@color/colorAccent"
         android:textAllCaps="true"
-        android:text="@string/my_cart"/>
+        android:text="@string/scan"/>
 
 </RelativeLayout>
