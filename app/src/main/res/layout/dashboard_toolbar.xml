@@ -8,4 +8,46 @@
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
     android:background="@color/colorPrimary">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp">
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_menu_white_24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_weight="1"
+            android:onClick="popup"/>
+
+        <ImageButton
+            android:id="@+id/user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@mipmap/ic_person_white_24dp"
+            android:layout_weight="1"
+            android:onClick="displayToast"/>
+
+        <ImageButton
+            android:id="@+id/notifications"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@mipmap/ic_notifications_white_24dp"
+            android:layout_weight="1"
+            android:onClick="displayToast"/>
+
+        <ImageButton
+            android:id="@+id/shopping_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@mipmap/ic_shopping_basket_white_24dp"
+            android:layout_weight="1"
+            android:onClick="displayToast"/>
+    </LinearLayout>
+
 </android.support.v7.widget.Toolbar>

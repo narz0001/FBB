@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -23,6 +24,7 @@ public class DashBoard extends AppCompatActivity {
 
     Button instoreLocater, barcodeScanner, myTransaction, myWallet;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +32,7 @@ public class DashBoard extends AppCompatActivity {
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(myToolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        //getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         final Activity activity = this;
 
@@ -91,44 +93,57 @@ public class DashBoard extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),R.string.no_implementation, Toast.LENGTH_SHORT).show();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_dashboard,menu);
-        //return super.onCreateOptionsMenu(menu);
-        return true;
-    }
+    //    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.menu_dashboard,menu);
+//        //return super.onCreateOptionsMenu(menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//        switch (item.getItemId()){
+//
+//            case R.id.menu:
+//                popup(item.getItemId());
+//                item.setIcon(R.mipmap.ic_arrow_back_white_24dp);
+//                return true;
+//
+//            case R.id.user:
+//                Toast.makeText(this,R.string.no_implementation, Toast.LENGTH_LONG).show();
+//                return true;
+//
+//            case R.id.notifications:
+//                Toast.makeText(this,R.string.no_implementation, Toast.LENGTH_LONG).show();
+//                return true;
+//
+//            case R.id.shopping_cart:
+//                Toast.makeText(this,R.string.no_implementation, Toast.LENGTH_LONG).show();
+//                return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
+//
+    public void popup(View view){
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()){
-
-            case R.id.menu:
-                popup(item.getItemId());
-                item.setIcon(R.mipmap.ic_arrow_back_white_24dp);
-                return true;
-
-            case R.id.user:
-                Toast.makeText(this,R.string.no_implementation, Toast.LENGTH_LONG).show();
-                return true;
-
-            case R.id.notifications:
-                Toast.makeText(this,R.string.no_implementation, Toast.LENGTH_LONG).show();
-                return true;
-
-            case R.id.shopping_cart:
-                Toast.makeText(this,R.string.no_implementation, Toast.LENGTH_LONG).show();
-                return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    public void popup(int itemId){
-        PopupMenu popup = new PopupMenu(getSupportActionBar().getThemedContext(),findViewById(itemId));
+        ((ImageView)view).setImageResource(R.mipmap.ic_arrow_back_white_24dp);
+        final PopupMenu popup = new PopupMenu(getSupportActionBar().getThemedContext(),view);
         popup.getMenuInflater().inflate(R.menu.dropdown_menu,popup.getMenu());
         popup.show();
+        popup.setOnDismissListener(new PopupMenu.OnDismissListener(){
+
+            private View temp =findViewById(R.id.menu);
+            @Override
+            public void onDismiss(PopupMenu menu){
+                ((ImageView)temp).setImageResource(R.mipmap.ic_menu_white_24dp);
+                popup.dismiss();
+            }
+        });
+
         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+
             @Override
             public boolean onMenuItemClick(MenuItem item2) {
                 switch (item2.getItemId()) {
@@ -161,10 +176,14 @@ public class DashBoard extends AppCompatActivity {
                         break;
 
                 }
-
                 return true;
             }
-        });
 
+        });
     }
+//
+//    public abstract void onDismiss(View temp){
+//        ((ImageView)).setImageResource(R.mipmap.ic_menu_white_24dp);
+//    }
 }
+
