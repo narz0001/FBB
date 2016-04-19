@@ -146,7 +146,7 @@
                 android:id="@+id/sign_up_button"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/action_sign_up"
                 android:textSize="22sp"
                 android:textAllCaps="false"
