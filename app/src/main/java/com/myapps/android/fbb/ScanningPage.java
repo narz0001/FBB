@@ -55,7 +55,7 @@ public class ScanningPage extends AppCompatActivity {
         historyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ScanningPage.this, "Will Show History Page", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ScanningPage.this, "Will Show Histo", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -65,7 +65,7 @@ public class ScanningPage extends AppCompatActivity {
         layoutInflater = (LayoutInflater)getSystemService(LAYOUT_INFLATER_SERVICE);
         final ViewGroup container = (ViewGroup)layoutInflater.inflate(R.layout.pop,null);
 
-        popUpWindow = new PopupWindow(container, rootLinear.getMeasuredWidth() - 300,700, true);
+        popUpWindow = new PopupWindow(container, rootLinear.getMeasuredWidth() - 250,700, true);
         popUpWindow.showAtLocation(rootLinear, Gravity.CENTER, 0, 0);
 
         done = (Button)container.findViewById(R.id.done);

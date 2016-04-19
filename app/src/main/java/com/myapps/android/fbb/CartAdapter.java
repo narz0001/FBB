@@ -41,7 +41,7 @@ public class CartAdapter extends ArrayAdapter<CartItem> {
 
         float discount = (Float.parseFloat(cartItem.itemPrice)/Float.parseFloat(cartItem.origPrice))*100;
         int discountInt = (int)discount;
-        String origPriceText = "Rs. "+cartItem.origPrice+ "("+discountInt+"% off)";
+        String origPriceText = "Rs. "+cartItem.origPrice;
 
         origPrice = (TextView)convertView.findViewById(R.id.origPrice);
         origPrice.setText(origPriceText);

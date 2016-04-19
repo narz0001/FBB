@@ -35,5 +35,8 @@
 
     <string name="my_cart">My Cart</string>
     <string name="scan">Scan</string>
+    
+    <string name="enter_string_manually">Enter Code Manually:</string>
+    <string name="done">Done</string>
 
 </resources>
