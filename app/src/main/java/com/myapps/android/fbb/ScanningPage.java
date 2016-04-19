@@ -1,15 +1,15 @@
 package com.myapps.android.fbb;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.Toast;
@@ -19,10 +19,11 @@ import com.google.zxing.integration.android.IntentResult;
 
 public class ScanningPage extends AppCompatActivity {
 
-    Button typeIt,done, initScan;
+    Button typeIt,done, initScan, historyButton;
     PopupWindow popUpWindow;
     LayoutInflater layoutInflater;
     LinearLayout rootLinear;
+    private String barcodeEntered;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class ScanningPage extends AppCompatActivity {
         typeIt = (Button)findViewById(R.id.typeIt);
         rootLinear = (LinearLayout)findViewById(R.id.rootLinear);
         initScan = (Button)findViewById(R.id.initScan);
+        historyButton = (Button)findViewById(R.id.historyButton); 
 
         typeIt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,12 +51,19 @@ public class ScanningPage extends AppCompatActivity {
                 scanStart();
             }
         });
+        
+        historyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ScanningPage.this, "Will Show History Page", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
     void showPopUp(){
         layoutInflater = (LayoutInflater)getSystemService(LAYOUT_INFLATER_SERVICE);
-        ViewGroup container = (ViewGroup)layoutInflater.inflate(R.layout.pop,null);
+        final ViewGroup container = (ViewGroup)layoutInflater.inflate(R.layout.pop,null);
 
         popUpWindow = new PopupWindow(container, rootLinear.getMeasuredWidth() - 300,700, true);
         popUpWindow.showAtLocation(rootLinear, Gravity.CENTER, 0, 0);
@@ -65,8 +74,13 @@ public class ScanningPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 popUpWindow.dismiss();
+                EditText enterBarCode = (EditText) container.findViewById(R.id.enterBarCode);
+                barcodeEntered = enterBarCode.getText().toString();
+                Log.d("BarcodeEntered","--------"+barcodeEntered);
+                Toast.makeText(ScanningPage.this, "Entered Barcode: "+barcodeEntered, Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
 
