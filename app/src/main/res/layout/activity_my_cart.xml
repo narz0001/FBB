@@ -7,10 +7,49 @@
     android:orientation="vertical"
     android:background="@color/colorAccentDark">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_cart_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:titleTextColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/close_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:foregroundGravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_clear_white_24dp"
+                android:layout_alignParentLeft="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="closeActivity"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textAllCaps="true"
+                android:text="@string/my_cart"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.35"
+        android:layout_weight="0.45"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:orientation="horizontal"
@@ -31,9 +70,8 @@
             android:id="@+id/totalPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Total: Rs 5840.00"
+            android:text="TOTAL: Rs 5840.00"
             android:textSize="16sp"
-            android:textAllCaps="true"
             android:textColor="@color/black"
             android:textAlignment="viewEnd"
             tools:ignore="RtlCompat" />
