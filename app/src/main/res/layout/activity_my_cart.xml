@@ -7,185 +7,181 @@
     android:orientation="vertical"
     android:background="@color/colorAccentDark">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="375dp"
-        android:orientation="vertical"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        >
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/numItem"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="Items(3)"
-                    android:textColor="@color/black"
-                    />
-
-                <TextView
-                    android:id="@+id/totalPrice"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Total: Rs 5840.00"
-                    android:textSize="20sp"
-                    android:textAlignment="viewEnd"
-                    tools:ignore="RtlCompat" />
-
-            </LinearLayout>
-
-            <ListView
-                android:padding="10dp"
-                android:background="@drawable/background_details"
-                android:id="@+id/cart"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
 
         <TextView
+            android:id="@+id/numItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Price Details"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="Items(3)"
             android:textColor="@color/black"
             />
-       <LinearLayout
-           android:padding="10dp"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:orientation="vertical"
-           android:background="@drawable/background_details">
 
-           <LinearLayout
-               android:layout_marginTop="5dp"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:textSize="20sp"
-                   android:text="Cart Total"/>
-               
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:text="Rs 5840"
-                   android:textSize="20sp"
-                   android:textAlignment="viewEnd"
-                   tools:ignore="RtlCompat" />
-           </LinearLayout>
-
-           <LinearLayout
-               android:layout_marginTop="5dp"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:textSize="20sp"
-                   android:text="Cart Discount"/>
-
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:text="-Rs        0"
-                   android:textColor="@color/green"
-                   android:textSize="20sp"
-                   android:textAlignment="viewEnd"
-                   tools:ignore="RtlCompat" />
-           </LinearLayout>
-
-           <LinearLayout
-               android:layout_marginTop="5dp"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:textSize="20sp"
-                   android:text="Sub Total"/>
-
-               <TextView
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:text="Rs 5840"
-                   android:textSize="20sp"
-                   android:textAlignment="viewEnd"
-                   tools:ignore="RtlCompat" />
-           </LinearLayout>
-
-           <LinearLayout
-               android:layout_marginTop="10dp"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
-
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:textSize="20sp"
-                   android:textColor="@color/black"
-                   android:text="Total Payable"/>
-
-               <TextView
-                   android:textColor="@color/black"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:text="Rs 5840"
-                   android:textSize="20sp"
-                   android:textAlignment="viewEnd"
-                   tools:ignore="RtlCompat" />
-           </LinearLayout>
-
-       </LinearLayout>
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: Rs 5840.00"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textAlignment="viewEnd"
+            tools:ignore="RtlCompat" />
 
     </LinearLayout>
+
+    <ListView
+        android:padding="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/background_details"
+        android:id="@+id/cart"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:text="Price Details"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/black"
+        />
 
     <LinearLayout
-        android:padding="5dp"
-        android:layout_marginTop="15dp"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:text="Proceed To Payment"
-        android:gravity="center"
-        android:background="@color/colorAccent">
-    <Button
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Proceed to Checkout"
-        android:textSize="20dp"
-        android:textColor="@color/colorAccent"
-        android:background="@drawable/background_login"/>
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical"
+        android:background="@drawable/background_details">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Cart Total"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 5840"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Cart Discount"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Rs 0"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Sub Total"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 5840"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Total Payable"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 5840"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:layout_gravity="center"
+        android:text="Proceed to payment"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/background_login"/>
 
 </LinearLayout>
