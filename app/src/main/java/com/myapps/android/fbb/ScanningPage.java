@@ -76,7 +76,6 @@ public class ScanningPage extends AppCompatActivity {
                 popUpWindow.dismiss();
                 EditText enterBarCode = (EditText) container.findViewById(R.id.enterBarCode);
                 barcodeEntered = enterBarCode.getText().toString();
-                Log.d("BarcodeEntered","--------"+barcodeEntered);
                 Toast.makeText(ScanningPage.this, "Entered Barcode: "+barcodeEntered, Toast.LENGTH_SHORT).show();
             }
         });
