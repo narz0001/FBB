@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_notifications_white_24dp.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/FBB/app/src/main/res/mipmap-xhdpi/ic_notifications_white_24dp.png"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_person_white_24dp.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/FBB/app/src/main/res/mipmap-xhdpi/ic_person_white_24dp.png"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_shopping_basket_white_24dp.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/FBB/app/src/main/res/mipmap-xhdpi/ic_shopping_basket_white_24dp.png"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_menu_white_24dp.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/FBB/app/src/main/res/mipmap-xhdpi/ic_menu_white_24dp.png"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/FBB/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_arrow_back_white_24dp.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/FBB/app/src/main/res/mipmap-xhdpi/ic_arrow_back_white_24dp.png"
+    }
+]

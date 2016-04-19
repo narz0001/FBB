@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLL"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context="com.myapps.android.fbb.DashBoard">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/dashboard_toolbar"
+        ></include>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/fbb_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="my store app"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginBottom="45dp"/>
+
+    <TableLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/instore_locater"
+                style="@style/DashboardButtons"
+                android:text="@string/instore_locater"
+                />
+            <Button
+                android:id="@+id/barcode_scanner"
+                style="@style/DashboardButtons"
+                android:text="@string/barcode_scanner"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/my_transaction"
+                style="@style/DashboardButtons"
+                android:text="@string/my_transaction"
+                />
+
+            <Button
+                android:id="@+id/my_wallet"
+                style="@style/DashboardButtons"
+                android:text="@string/my_wallet"
+                />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

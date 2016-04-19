@@ -23,9 +23,10 @@ public class MyCart extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_cart);
-//
-//        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_car_tool_bar);
-//        setSupportActionBar(myToolbar);
+
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_cart_toolbar);
+        setSupportActionBar(myToolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         myCart = new CartAdapter(
                 this,new ArrayList<CartItem>());
