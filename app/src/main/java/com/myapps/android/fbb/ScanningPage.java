@@ -29,8 +29,8 @@ public class ScanningPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanning_page);
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.scan_page_tool_bar);
-        setSupportActionBar(myToolbar);
+//        Toolbar myToolbar = (Toolbar) findViewById(R.id.scan_page_tool_bar);
+//        setSupportActionBar(myToolbar);
 
         typeIt = (Button)findViewById(R.id.typeIt);
         rootLinear = (LinearLayout)findViewById(R.id.rootLinear);
