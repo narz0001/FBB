@@ -55,7 +55,7 @@ public class ScanningPage extends AppCompatActivity {
         historyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ScanningPage.this, "Will Show Histo", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ScanningPage.this, R.string.no_implementation, Toast.LENGTH_SHORT).show();
             }
         });
 
