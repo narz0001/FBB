@@ -1,0 +1,8 @@
+CHANGED,/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/myapps/android/fbb/MyCart$override.class
+CHANGED,/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/myapps/android/fbb/ScanningPage$2$override.class
+CHANGED,/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/myapps/android/fbb/ScanningPage$override.class
+CHANGED,/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/myapps/android/fbb/ScanningPage$4$override.class
+CHANGED,/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/myapps/android/fbb/ScanningPage$3$override.class
+CHANGED,/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/myapps/android/fbb/MyCart$GetData$override.class
+CHANGED,/home/ubuntu/AndroidStudioProjects/FBB/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/myapps/android/fbb/ScanningPage$1$override.class
