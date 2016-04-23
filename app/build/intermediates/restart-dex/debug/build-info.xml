@@ -4,7 +4,7 @@
     api-level="19"
     density="xhdpi"
     format="7"
-    timestamp="6816021777504" >
+    timestamp="8000995203926" >
 
     <task
         name="javac"
@@ -23,7 +23,7 @@
         location="/home/ubuntu/AndroidStudioProjects/FBB/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="6816021777504" >
+    <build timestamp="8000995203926" >
         <artifact
             location="/home/ubuntu/AndroidStudioProjects/FBB/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
